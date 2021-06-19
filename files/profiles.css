@@ -1,0 +1,107 @@
+.profileContainer{
+    padding:100px 0 0 0;
+    max-width:100%;
+    display: grid;
+    grid-template-columns:20% 70% 10%;
+}
+.leftContainer{
+    top: 50px;
+    margin:0 10px 50px 0;
+}
+.leftContainer div{
+    text-shadow: 4px 0px 4px rgba(0,0,0,0.25);
+    padding:10px 0px 10px 25px;
+}
+.leftContainer div:hover{
+    background-color:rgba(255,255,255,0.5);
+    transition:0.3s;
+}
+.mainProfile{
+    min-height:70vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:18px;
+    background: rgb(255, 255, 255);
+}
+#selected{
+    padding:4px 0px 4px 5vw;
+    margin-block: 5px;
+    background-color:rgba(243,217,207, 1) ;
+    border-radius: 0 18px 18px 0;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+#profile_pic{
+    max-height:300px;
+}
+.profileBottom{
+    display: flex;
+    display: inline-flex;
+    margin-top:30px;
+}
+.profileBottom div{
+    padding:1vw;
+    max-width:100%;
+}
+.user_settings{
+    display:flex;
+    flex-direction: column;
+    justify-items:center;  
+    align-items:flex-end; 
+}
+#user_settings{
+    padding-right:1vw;
+    max-width:100px;
+    max-height:100px;
+}
+#ham_2{
+    max-height: 50px;
+    max-width: 50px;
+    display:none;
+}
+@media only screen and (max-width: 976px){
+    .profileContainer{
+        transition:ease-in 0.5s;
+        grid-template-columns: 90% 10%;
+    }
+    .mainProfile{
+        margin-left:5vw;
+    }
+    .leftContainer {
+        display:none;
+        padding-block:30px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:end;
+        transition:ease-in 1s;
+    }
+    #ham_2{
+        z-index: 1;
+        position:fixed;
+        display:initial !important;
+        bottom:20px;
+    }
+    #ham2img{
+        display: initial !important;
+        height:50px;
+        width:50px;
+        border-radius:50%;
+        align-self: end;
+    }
+    #user_settings{
+        height:50px;
+        position:sticky;
+        top: 80px;
+    }
+}
+@media only screen and (max-width: 460px){
+    .fieldName *,.fieldValue *,.fieldName {
+        font-size: 0.8rem;
+    }
+    #profile_pic{
+        max-height: 170px;
+    }
+    .mainProfile{
+        min-height:80vh;
+    }
+}
