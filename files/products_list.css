@@ -1,7 +1,7 @@
 .proContainer{
     display:flex;
     flex-direction:row;
-    padding:3vw;
+    padding:4vw;
     padding-top:1rem;
     max-width:100%; 
     flex-wrap: wrap;
