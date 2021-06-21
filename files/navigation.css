@@ -11,7 +11,7 @@ body, html{
 }
 
 .navmenu{
-    z-index: 2;
+    z-index: 2000;
     width:100%;
     background-color:rgba(243,217,207, 1);
     height:70px;
