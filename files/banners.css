@@ -22,8 +22,14 @@
     -o-transition: all ease-in-out 500ms;
 }
 #arrowr, #arrowl{
-
     max-height:3vw;
+}
+#imgbanbtn-prev,
+#imgbanbtn-next{
+    top:40%;
+}
+#imgbanbtn-next{
+    right:1vw;
 }
 .banContainer #banner3{
 background-size: cover;
@@ -41,7 +47,6 @@ background-repeat: no-repeat;
         background-repeat: no-repeat;
         }
         .imgbanbtn{
-            width: 40px;
             height: 40px;
            
             border-radius: 4px;
