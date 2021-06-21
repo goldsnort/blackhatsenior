@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
     <link rel="stylesheet" href="./forms.css" />
     <title>Document</title>
 </head>
 <body>
     <section class="logo">
         <div class="logo"><a href="homepage.html"><img src="./images/logo1.png" alt="logo"></a></div>
-        <div><a href="homepage.html">SHOPTRONICS</a></div>
     </section>
     <section class="formLayout">
-        <div id="selectionLeft">sign in</div>
-        <div id="selectionRight">sign up</div>
+        <div class="formSelection" id="selectionLeft"><div class="formTopOption">sign in</div></div>
+        <div class="formSelection" id="selectionRight"><div class="formTopOption">sign up</div></div>
         <div id="mainForm">
-            <input type="email" placeholder="someone@email.com"/>
-            <input type="password" placeholder="password"/>
+            <div class="formInput"><input type="email" placeholder="someone@email.com"/></div>
+            <div class="formInput"><input type="password" placeholder="password"/></div>
+            <div class="formButton"><button id="signInButton">sign in</button></div>
         </div>
     </section>
 </body>
