@@ -10,9 +10,12 @@
 
 .proContainer  img {
     border-radius:2rem;
-    box-shadow:4 4 4 rgba(0,0,0,0.25);
-    padding:1vw;
+    box-shadow:  7px 7px 14px #9a8f8e,
+             -7px -7px 14px #ffffff;
     max-height:17rem;
+}
+.proContainer div{
+    padding:1vw;
 }
 @media only screen and (max-width: 976px){
     .proContainer img{
