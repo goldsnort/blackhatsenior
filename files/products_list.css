@@ -14,8 +14,11 @@
              -7px -7px 14px #ffffff;
     max-height:17rem;
 }
-.proContainer div{
-    padding:1vw;
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2vw;
 }
 @media only screen and (max-width: 976px){
     .proContainer img{
