@@ -38,6 +38,7 @@ if(bannerStatus===1){
     document.getElementById("banner2").style.opacity="1";
  },1000);
 bannerStatus =2;
+bannerStatusPrev=3;
 }
 else if(bannerStatus===2){
     document.getElementById("banner3").style.opacity="0";
@@ -55,6 +56,7 @@ else if(bannerStatus===2){
     document.getElementById("banner3").style.opacity="1";
  },1000);
 bannerStatus =3;
+bannerStatusPrev=1;
 }
 else if(bannerStatus===3){
     document.getElementById("banner1").style.opacity="0";
@@ -72,6 +74,7 @@ else if(bannerStatus===3){
     document.getElementById("banner1").style.opacity="1";
  },1000);
 bannerStatus =1;
+bannerStatusPrev=2;
 }
 }
 function bannerLoopPrev(){
