@@ -13,22 +13,23 @@
     <title>Document</title>
     <style>
         .addProductButtons {
-            display:flex;
+            display: flex;
             flex-direction: row;
-            display:inline-flex;
-            border:0;
-            align-items:center;
+            display: inline-flex;
+            border: 0;
+            align-items: center;
 
         }
-        .addProductButtons button{
-            background:rgba(243,217,207, 1);
-            border:0;
-            margin:1vw;
-            font-family:"Reem Kufi";
-            font-size:1.1rem;
+
+        .addProductButtons button {
+            background: rgba(243, 217, 207, 1);
+            border: 0;
+            margin: 1vw;
+            font-family: "Reem Kufi";
+            font-size: 1.1rem;
             padding: 0.4vw 2vw;
-            border-radius:18px;
-            box-shadow:4px 4px 4px rgba(0,0,0,0.25);
+            border-radius: 18px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         }
     </style>
 </head>
@@ -93,24 +94,25 @@
                     <div class="fieldName">description</div>
                 </div>
                 <div class="fieldValue">
-                    <div class="fieldValue">abcdefghijklm</div>
-                    <div class="fieldValue">94933</div>
-                    <div class="fieldValue"><input type="text" placeholder="1" id="noOfProducts" /></div>
-                    <div class="fieldValue"> Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Rem, beatae obcaecati quisquam id possimus accusantium doloribus recusandae
-                        explicabo, architecto repudiandae tempore molestias saepe voluptatibus reprehenderit. Modi
-                        tenetur maxime excepturi sint nam blanditiis aliquam illum perspiciatis sequi nihil aliquid,
-                        ducimus iure voluptatum iste reprehenderit?
-                        Assumenda, autem consectetur et quo rerum beatae!</div>
+                    <div class="fieldValue"><input type="text" placeholder="name" id="prodcutName"></div>
+                    <div class="fieldValue"><input type="text" placeholder="price" id="productPrice"></div>
+                    <div class="fieldValue"><input type="number" placeholder="1" id="noOfProducts" min="1" /></div>
+                    <div class="fieldValue">
+                        <textarea id="productDescription" rows="7" border="0px">
+                        asdfsdfas
+                        </textarea>
+                    </div>
                 </div>
             </div>
+        
             <!-- styling for these two 
                 buttons is done in the body of the html itself -->
             <div class="addProductButtons">
-                <a href=""><button  id="submitProduct">submit</button></a>
-                <a href=""><button  id="clearAll">clear all</button></a>
+                <a href=""><button id="submitProduct">submit</button></a>
+                <a href=""><button id="clearAll">clear all</button></a>
             </div>
         </div>
+    </div>
 
         <div class="user_settings">
             <img src="./images/user_settings.png" alt="user_settings" id="user_settings" />
