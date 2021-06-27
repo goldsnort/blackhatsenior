@@ -11,12 +11,24 @@ body, html{
 
 }
 body{
+    background-size: 400% 400% !important;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    background: rgb(228,167,212);
-background: linear-gradient(70deg, rgba(228,167,212,1) 0%, rgba(213,213,231,1) 52%, rgba(164,222,234,1) 100%);
+    background: linear-gradient(45deg, rgba(228,167,212,1) 0%, rgba(213,213,231,1) 52%, rgba(164,222,234,1) 100%);
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .logo img{ 
     justify-self:center;     
