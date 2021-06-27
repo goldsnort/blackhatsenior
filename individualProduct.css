@@ -1,0 +1,10 @@
+.individualProduct {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+#productImage {
+  width: 200px;
+}
