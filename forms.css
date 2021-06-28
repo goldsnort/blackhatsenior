@@ -17,7 +17,7 @@ body{
     justify-content:flex-start;
     align-items: center;
     background: linear-gradient(45deg, rgba(228,167,212,1) 0%, rgba(213,213,231,1) 52%, rgba(164,222,234,1) 100%);
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 @keyframes gradient {
     0% {
@@ -59,7 +59,7 @@ body{
     height:100%;
     width:100%;
     background:#f3d9cf;
-    border-radius:0 20px 0 0;
+    border-radius:0 20px 0 5px;
     box-shadow: inset 4px -4px 4px rgba(0,0,0,0.25);
     height:45px;
 }
@@ -108,4 +108,9 @@ input{
     border-radius: 18px;
     box-shadow:  8px 8px 16px #bdbdbd,
              -8px -8px 16px #ffffff;
+}
+.formLayout input,.formLayout button{
+    font-family:"Reem Kufi";
+    font-size:1rem;
+
 }
