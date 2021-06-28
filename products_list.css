@@ -1,8 +1,8 @@
 .proContainer{
     display:flex;
     flex-direction:row;
-    padding:4vw;
-    padding-top:1rem;
+    margin:4vw;
+    margin-top:1rem;
     max-width:100%; 
     flex-wrap: wrap;
     justify-content: space-around;
@@ -19,8 +19,71 @@
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:2vw;
+    margin:2vw;
 }
+.cardButton button{
+    border:0;
+    padding:10px;
+    background:#fff;
+    border-radius:18px;
+    font-family:"Reem Kufi";
+    font-size:1rem;
+}
+.cardOverlay{
+    position:absolute;  
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,0.1);
+    color: #000;
+    border-radius:2rem;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    opacity:0;
+    transition:ease-in 0.3s;
+}
+.cardOverlay:hover{
+    opacity:1;
+}
+
+.cardOverlay:hover *{
+    animation: popup 0.4s;  
+}
+
+@keyframes popup {
+  0%{
+    transform: translate(0,25px);
+  }
+  20%{
+    transform: translate(0,20px);
+  }
+  40%{
+    transform: translate(0,15px);
+  }
+  60%{
+    transform: translate(0,10px);
+  }
+  80%{
+    transform: translate(0,5px);
+  }
+  100%{
+    transform: translate(0,0px);
+  }
+}
+
+.cardOverlay div{
+    margin:5px ;
+    margin-left:20px !important;
+}
+.cardButton{
+    margin-top:auto !important;
+    margin-bottom:20px !important;
+}
+.cardPrice{
+    margin-top:20px !important;
+}
+
 @media only screen and (max-width: 976px){
     .proContainer img{
         max-height:40vw;
