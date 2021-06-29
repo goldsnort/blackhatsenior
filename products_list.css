@@ -86,7 +86,7 @@
 
 @media only screen and (max-width: 976px){
     .proContainer img{
-        max-height:40vw;
+        max-height:35vw;
     }
     .card{
         position: static;
