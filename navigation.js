@@ -6,6 +6,8 @@ const navright=document.querySelector(".navright");
 const search=document.querySelector("#search");
 const navbuffer=document.querySelector(".navbuffer");
 const navstart=document.querySelector(".navstart");
+const searchButton=document.getElementById("searchButton");
+
 scrollTo(0,0);
 function toggle_nav_ham()
 {
@@ -49,3 +51,10 @@ ham.addEventListener("click",(event)=>{
     toggle_nav_ham();
 }
 );
+searchButton.addEventListener("click",(event)=>{
+    onClickSearch();
+}
+);
+function onClickSearch(){
+    searchButton.style.backgroundColor="rgba(0,0,0,0.3)";
+}
