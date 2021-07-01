@@ -24,7 +24,7 @@
 .cardButton button{
     border:0;
     padding:10px;
-    background:#A9A9A9;
+    background:#fff;
     border-radius:18px;
     font-family:"Reem Kufi";
     font-size:1rem;
@@ -110,6 +110,7 @@
 
     }
     .cardButton button{
+        background:#d0d0d0;
         margin:0 !important;
     }
     .cardOverlay:hover *{
