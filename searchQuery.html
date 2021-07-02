@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./scroll.css" />
   <link rel="stylesheet" href="./navigation.css" />
   <link rel="stylesheet" href="./footer.css" />
-  <link rel="stylesheet" href="./searchQuery.css" />
   <link rel="stylesheet" href="./products_list.css" />
+  <link rel="stylesheet" href="./searchQuery.css" />
   <link href="https://fonts.googleapis.com/css?family=Reem Kufi" rel="stylesheet" />
   <title>Document</title>
 </head>
@@ -66,24 +66,32 @@
 
   <!-- searchQuery -->
 
-  <section class="searchContainer">
-    <div class="filters">
-      <div>filter by price</div>
-      <div>from: <input class="inputNo" placeholder="0" type="text" /> to: <input class="inputNo" placeholder="0"
-          type="text" /></div>
-      <div>
-        filter by seller
-        <uo>
-          <li>seller1</li>
-          <li>seller1</li>
-          <li>seller1</li>
-          <li>seller1</li>
-          <li>seller1</li>
-          <li>seller1</li>
-          <li>seller1</li>
-        </uo>
+  <section class="searchQuery">
+    <div class="filterContainer">
+      <div class="filters">
+        <div>filter by price</div><br>
+        <div>
+          from:<br> <input class="inputNo" placeholder="0" min="0" type="text" />
+          <br>to:<br> <input class="inputNo" placeholder="0" min="0" type="text" />
+        </div>
+        <div>
+          <br>
+          filter by seller
+          <uo>
+            <li>seller1</li>
+            <li>seller1</li>
+            <li>seller1</li>
+            <li>seller1</li>
+            <li>seller1</li>
+            <li>seller1</li>
+            <li>seller1</li>
+          </uo>
+        </div>
       </div>
+      <div id="ham_2"><img id="ham2img" src="./images/ham_2.png" alt="ham_2" onclick="toggleHam2()"></div>
     </div>
+    
+  
     <div class="proContainer">
       <div class="card">
         <div class="cardImage"><a href="./index.html"><img src="./images/pro1.png" alt="" /></a></div>
@@ -173,4 +181,5 @@
   </section>
 </body>
 <script src="./navigation.js"></script>
+<script src="./searchQuery.js"></script>
 </html>
