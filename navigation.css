@@ -89,8 +89,11 @@ a:link,a:visited,a:active{
     font-size: 1.2rem;
 }
 a:hover{
-    cursor: default;
+    cursor: pointer;
     transition:ease-in 0.4s;
+}
+#loginButton:hover{
+    cursor:pointer;
 }
 @media only screen and (max-width: 978px) {
     .navleft,.navright{
@@ -129,4 +132,134 @@ a:hover{
 ::placeholder{
     font-family:"Reem Kufi";
     font-size:1.1rem;
+}
+.loginPopup{
+    left:0;
+    top:0;
+    display: none;
+    position:fixed;
+    z-index: 4000;
+    height:100vh;
+    width:100vw !important;
+    backdrop-filter: blur(1px);
+    background:rgba(0,0,0,0.8);
+    transition:fadein 0.4s;
+}
+@keyframes fadein{
+    0%{
+        transform: translate(0,25px)scale(0.1);
+        transform-origin: top-left;
+      }
+      20%{
+        transform: translate(0,20px)scale(0.2);
+        transform-origin: top-left;
+      }
+      40%{
+        transform: translate(0,15px)scale(0.4);
+        transform-origin: top-left;
+      }
+      60%{
+        transform: translate(0,10px)scale(0.6);
+        transform-origin: top-left;
+      }
+      80%{
+        transform: translate(0,5px)scale(0.8);
+        transform-origin: top-left;
+      }
+      100%{
+        transform: translate(0,0px)scale(1);
+        transform-origin: top-left;
+      }
+}
+#crossButton{
+    z-index: 4005;
+    max-height:40px;
+    position:fixed;
+    top:5vh;
+    right:5vw;
+    border-radius:50%;
+}
+#crossButton:hover{
+    cursor:pointer;
+}
+.loginPopupVisible{
+    z-index:4001;
+    position:fixed;
+    left:10vw;
+    right:10vw;
+    top:5vh;
+    bottom:2vh;
+    overflow:hidden;
+    border-radius:30px;
+}
+#loginPopupImage{
+    min-height:100%;
+    width:1230px;
+    position:relative;
+}
+.loginPopupLeft{
+    font-size:2rem;
+    display:flex;
+    z-index:4003;
+    position:fixed;
+    left:13vw;
+    right:50vw;
+    top:13vh;
+    bottom:10vh;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.loginPopupRight{
+    font-size: 2rem;
+    display:flex;
+    z-index:4003;
+    position:fixed;
+    right:13vw;
+    left:50vw;
+    top:13vh;
+    bottom:10vh;
+    text-align: right;
+    flex-direction: column;
+    align-items:flex-end;   
+}
+#slrPopupButton{
+    align-self:flex-end;
+    margin-top:auto;
+    margin-bottom:20px;
+    margin-right:5vw;
+    border-radius:18px;
+}
+#usrPopupButton{
+    align-self:flex-end;
+    margin-top:auto;
+    margin-bottom:20px;
+    margin-right:3vw;
+    border-radius:18px;
+}
+.loginPopup button{
+    min-width:150px;
+    border:0px;
+    font-family: "Reem Kufi";
+    font-size:1rem;
+    width:90%;
+    background:white;
+    padding:7px 0;
+    border-radius: 18px;
+    box-shadow:  4px 4px 4px rgba(0,0,0,0.25);
+}
+.loginPopupLeft .popupText{
+    align-self:flex-start;
+    max-width:350px;
+}
+.loginPopupRight .popupText{
+    align-self:flex-end;
+    max-width:350px;
+}
+@media only screen and (max-width:480px){
+    .loginPopupRight,.loginPopupLeft{
+        font-size:1.2rem;
+    }
+    .loginPopup button{
+        min-width:70px;
+    }
 }
