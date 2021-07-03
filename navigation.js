@@ -3,9 +3,14 @@ const body=document.querySelector(".body");
 const navmenu=document.querySelector(".navmenu");
 const navleft=document.querySelector(".navleft");
 const navright=document.querySelector(".navright");
-const search=document.querySelector("#search");
+const search=document.getElementById("search");
 const navbuffer=document.querySelector(".navbuffer");
 const navstart=document.querySelector(".navstart");
+const searchButton=document.getElementById("searchButton");
+const imagePopup=document.getElementById("loginPopupImage");
+const viewWidth=document.documentElement.clientWidth;
+const viewHeight=document.documentElement.clientHeight;
+const popupClass=document.querySelector(".loginPopup");
 scrollTo(0,0);
 function toggle_nav_ham()
 {
@@ -49,3 +54,18 @@ ham.addEventListener("click",(event)=>{
     toggle_nav_ham();
 }
 );
+searchButton.addEventListener("click",(event)=>{
+    onClickSearch();
+}
+);
+function onClickSearch(){
+    searchButton.style.backgroundColor="rgba(0,0,0,0.3)";
+}
+let x=615-(4/10)*viewWidth;
+imagePopup.style.right=x+'px';
+function loginPopup(){
+    popupClass.style.display="initial";
+}
+function closeLoginPopup(){
+    popupClass.style.display="none";
+}
